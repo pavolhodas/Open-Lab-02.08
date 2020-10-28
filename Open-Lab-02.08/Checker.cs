@@ -6,12 +6,18 @@ namespace Open_Lab_02._08
     {
         public bool IsEmpty(string str)
         {
-            if (str=="")
+            Greeter greeter = new Greeter();
+            greeter.Greet();
+            Console.ReadKey();
+
+            if (IsEmpty(str))
             {
+                Console.WriteLine(greeter.Greet()+ str + ")");
                 return true;
             }
             else
             {
+                Console.WriteLine(greeter.Greet() + str + ")");
                 return false;
             }
         }
